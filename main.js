@@ -6,25 +6,26 @@ function computerPlay (play) {
 
 var gameSelection = ['Rock', 'Paper', 'Scissors'];
 
-var computerSelection = computerPlay(gameSelection);
-
-function aRound () {
-    var playerSelection = prompt("Rock, Paper, Scissors???");
+function aRound (playerSelection, computerSelection) {
     if (playerSelection === 'Rock' && computerSelection === 'Scissors') {
-        console.log('You win! Rock beats Scissors!');
+        return 'You win! Rock beats Scissors!';
     } else if (playerSelection === 'Paper' && computerSelection === 'Rock') {
-        console.log('You win! Paper beats Rock!');
+        return 'You win! Paper beats Rock!';
     } else if (playerSelection === 'Scissors' && computerSelection === 'Paper') {
-        console.log('You win! Scissors beats Paper!');
+        return 'You win! Scissors beats Paper!';
     } else if (playerSelection === 'Rock' && computerSelection === 'Paper') {
-        console.log('You lose! Paper beats Rock!');
+        return 'You lose! Paper beats Rock!';
     } else if (playerSelection === 'Paper' && computerSelection === 'Scissors') {
-        console.log('You lose! Scissors beats Paper!');
+        return 'You lose! Scissors beats Paper!';
     } else if (playerSelection === 'Scissors' && computerSelection === 'Rock') {
-        console.log('You lose! Rock Beats Scissors');
+        return 'You lose! Rock Beats Scissors';
+    } else if (playerSelection === "" && computerSelection === 'Rock' || 'Paper' || 'Scissors'){
+        return 'You lose! You did not make a move!';
     } else {
-        console.log('Draw!');
+        return 'Draw!';
     }
 }
-        
-aRound();
+
+var playerSelection = prompt("Rock, Paper, Scissors?!");
+var computerSelection = computerPlay(gameSelection);
+console.log(aRound(playerSelection, computerSelection));
