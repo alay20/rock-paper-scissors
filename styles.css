@@ -1,0 +1,72 @@
+.header {
+    display: flex;    
+    flex-direction: column;
+    text-align: center;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.participant{
+    width: 187px;
+}
+
+.player,
+.computer {
+    margin-left: 100px;
+    margin-right:100px;
+}
+
+.resultboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.round-result {
+    font-size: large;
+}
+
+.finalboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.final-result {
+    margin-top: 50px;
+    font-size: xx-large;
+    font-weight: 900;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.btnR, 
+.btnP, 
+.btnS {
+    height: 36px;
+    width: 85px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.again-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnAgain {
+    height: 36px;
+    width: 85px;
+}
